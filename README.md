@@ -102,16 +102,23 @@ The system provides **real-time prediction with probability score**.
 
 ## Project Structure
 ```
-AI-Customer-Attrition/
-├── model.ipynb                  # Model training & evaluation notebook
-├── app.py                       # Flask web application
-├── index.html                   # Web app UI template
-├── stacking_model_final.pkl      # Trained stacking ensemble model
-├── numeric_imputer.pkl           # Numeric feature imputer
-├── categorical_imputer.pkl       # Categorical feature imputer
-├── feature_list.pkl              # Column order list for deployment
-├── requirements.txt             # Python dependencies
-└── README.md                    # Project documentation
+AI-Customer-Attrition-Prediction/
+│
+├── app.py                        # Flask application
+├── README.md                      # Project description & instructions
+├── requirements.txt               # Dependencies
+│
+├── models/
+│   ├── stacking_model_final.pkl   # Pre-trained stacking ensemble model
+│   └── feature_list.pkl           # Feature order for inference
+│
+├── utils/
+│   └── preprocess_input.py        # Input preprocessing for prediction
+│
+├── templates/
+│   └── index.html                 # Web interface for user input
+│
+└── static/                        # (Optional) CSS, images, JS for UI enhancement
 ```
 ## Tech Stack
 
