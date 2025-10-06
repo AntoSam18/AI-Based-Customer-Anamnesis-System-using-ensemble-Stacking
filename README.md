@@ -5,7 +5,7 @@
 ## **Project Overview**
 The **AI-Driven Customer Attrition System** is a machine learning solution designed to predict customers likely to leave a telecom service. By proactively identifying potential attrition, businesses can take retention actions to improve customer satisfaction and lifetime value.
 
-This project uses a **stacked ensemble of Random Forest, XGBoost, and LightGBM**, combined with a **logistic regression meta-learner** for superior predictive performance.
+This project uses a **stacked ensemble of Random Forest, XGBoost, and LightGBM**, combined with a **logistic regression meta-learner** for superior predictive performance.It also uses LIME to show model interporablity.
 
 ---
 
@@ -42,6 +42,27 @@ This project uses a **stacked ensemble of Random Forest, XGBoost, and LightGBM**
 - Focus on **balanced dataset training** for fair and unbiased predictions.
 - **Probability-based thresholding** for optimized F1-score and decision-making.
 - Web interface is **user-friendly, responsive, and visually appealing**.
+
+- ### LIME-Based Explainability
+
+This project uses **LIME (Local Interpretable Model-Agnostic Explanations)** to provide transparency into the model’s predictions. Key features:
+
+- **Top Feature Impact**: For each customer prediction, the top 5 features influencing churn probability are highlighted.
+- **Direction of Impact**: Each feature is labeled as either **"increases churn"** or **"decreases churn"**.
+- **Numeric & Categorical Support**: Both numeric values (e.g., `MonthlyCharges`) and categorical selections (e.g., `Contract_Type`) are explained.
+- **Interactive Understanding**: Users can see **which features contributed most** to the predicted churn/stay outcome, making the prediction more interpretable.
+- **Model-Agnostic**: Works with any classifier, including stacking ensembles like **RF + XGB + LGBM**.
+
+Example output for a customer:
+
+- `MonthlyCharges (799.0) -> decreases churn`
+- `TotalCharges (9588.0) -> decreases churn`
+- `tenure (12.0) -> decreases churn`
+- `SeniorCitizen (0) -> decreases churn`
+- `gender_Female (0) -> decreases churn`
+
+This integration helps **explain the model’s decision-making process**, boosting trust and usability in business contexts.
+
 
 ---
 
