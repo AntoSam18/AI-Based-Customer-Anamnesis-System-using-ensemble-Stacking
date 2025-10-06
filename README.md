@@ -147,6 +147,7 @@ AI-Customer-Attrition-Prediction/
 - **scikit-learn**, **XGBoost**, **LightGBM**, **imbalanced-learn**
 - **Flask** (Web App)
 - **Pandas**, **NumPy**, **Matplotlib**, **Seaborn**
+- **LIME**
 
 ## Author
 - **Anto Sam Christ A**  
