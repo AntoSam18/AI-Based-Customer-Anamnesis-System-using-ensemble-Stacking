@@ -148,6 +148,15 @@ AI-Customer-Attrition-Prediction/
 - **Flask** (Web App)
 - **Pandas**, **NumPy**, **Matplotlib**, **Seaborn**
 - **LIME**
+## 📊 Model Architecture
+![Model Architecture](images/arch.png)
+
+## 🔍 LIME Explanation
+![LIME Output](images/graph.png)
+
+## 💻 Web App Screenshot
+![App Screenshot](images/Output1.png)
+![App Screenshot](images/Output2.png)
 
 ## Author
 - **Anto Sam Christ A**  
